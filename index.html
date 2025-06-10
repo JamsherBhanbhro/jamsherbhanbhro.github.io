@@ -200,12 +200,44 @@ updateActiveNavLink();
 
 // Initialize with sample data
 document.addEventListener('DOMContentLoaded', function() {
-    const publicationsData = [
-        { title: "Issues in federated learning: some experiments and preliminary results", journal: "Scientific Reports", year: "2024", desc: "Surveys and Practical implementations of FL ISSUES.", link: "https://www.nature.com/articles/s41598-024-81732-0" },
-        { title: "Towards More Efficient and Improved Federated Learning", journal: "European Conference on Advances in Databases and Information Systems", year: "2024", desc: "Discusses Techniques for Efficient FL.", link: "https://link.springer.com/chapter/10.1007/978-3-031-70421-5_33" },
-        { title: "Speech Emotion Recognition Using Deep Learning Hybrid Models", journal: "2022 International Conference on Emerging Technologies in Electronics, Computing and Communication (ICETECC)", year: "2022", desc: "Recognizing Emotions from Audio Signals Using deep learning models.", link: "https://ieeexplore.ieee.org/abstract/document/10069212" },
-        { title: "PIA Accidents Analysis Using Naïve Bayes Classifier", journal: "2020 International Conference on Emerging Technologies in Electronics, Computing and Communication (ICETECC)", year: "2022", desc: "Analysing Airline Crashes.", link: "https://d1wqtxts1xzle7.cloudfront.net/66262632/8._PIA_Accidents_Analysis_Using_Naive_Bayes_Classifier-libre.pdf?1618386528=&response-content-disposition=inline%3B+filename%3DPIA_Accidents_Analysis_Using_Naive_Bayes.pdf&Expires=1743717125&Signature=b-liP~B2DoUa72SHO4b8CUyRdy4QFx7jJqKCPhausw31Mt1aYcybRzkpMZZf6uCK-uLai4rvNAHt4mqPEpDVJL5dA8ArodWYxe1TqV4eaqrI7I5JLYSBqpttI2dBksW-ewTz-qevoB~oerJNKrUp6lG2raZlonQd0ZfTPkV4SmVQhByI7Q97UehH-qz8RFG8ksSejEr04FOuLW2-EG4n2wVwKXXAF6jsThZD09Pkb5x3SXR2EgXAVkE60J53~FVH0YG1ndRNWff0XZb~zsu9VVP7K-V304suQVglBmuPkCvuy-eZPZ5FDJ4G737eZmGbpkt0o-Ys9fHa8CXRpyGyWA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" }
-    ];
+   const publicationsData = [
+    {
+        title: "Issues in federated learning: some experiments and preliminary results",
+        journal: "Scientific Reports",
+        year: "2024",
+        desc: "Surveys and Practical implementations of FL ISSUES.",
+        link: "https://www.nature.com/articles/s41598-024-81732-0"
+    },
+    {
+        title: "Towards More Efficient and Improved Federated Learning",
+        journal: "European Conference on Advances in Databases and Information Systems",
+        year: "2024",
+        desc: "Discusses Techniques for Efficient FL.",
+        link: "https://link.springer.com/chapter/10.1007/978-3-031-70421-5_33"
+    },
+    {
+        title: "Speech Emotion Recognition Using Deep Learning Hybrid Models",
+        journal: "2022 International Conference on Emerging Technologies in Electronics, Computing and Communication (ICETECC)",
+        year: "2022",
+        desc: "Recognizing Emotions from Audio Signals Using deep learning models.",
+        link: "https://ieeexplore.ieee.org/abstract/document/10069212"
+    },
+    {
+        title: "PIA Accidents Analysis Using Naïve Bayes Classifier",
+        journal: "2020 International Conference on Emerging Technologies in Electronics, Computing and Communication (ICETECC)",
+        year: "2022",
+        desc: "Analysing Airline Crashes.",
+        link: "https://d1wqtxts1xzle7.cloudfront.net/66262632/8._PIA_Accidents_Analysis_Using_Naive_Bayes_Classifier-libre.pdf?1618386528=&response-content-disposition=inline%3B+filename%3DPIA_Accidents_Analysis_Using_Naive_Bayes.pdf&Expires=1743717125&Signature=b-liP~B2DoUa72SHO4b8CUyRdy4QFx7jJqKCPhausw31Mt1aYcybRzkpMZZf6uCK-uLai4rvNAHt4mqPEpDVJL5dA8ArodWYxe1TqV4eaqrI7I5JLYSBqpttI2dBksW-ewTz-qevoB~oerJNKrUp6lG2raZlonQd0ZfTPkV4SmVQhByI7Q97UehH-qz8RFG8ksSejEr04FOuLW2-EG4n2wVwKXXAF6jsThZD09Pkb5x3SXR2EgXAVkE60J53~FVH0YG1ndRNWff0XZb~zsu9VVP7K-V304suQVglBmuPkCvuy-eZPZ5FDJ4G737eZmGbpkt0o-Ys9fHa8CXRpyGyWA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+    },
+    {
+        title: "Speech Emotion Recognition: Comparative Analysis of CNN-LSTM and Attention-Enhanced CNN-LSTM Models",
+        journal: "Signals",
+        year: "2025",
+        desc: "A comparative study of hybrid deep learning models for speech emotion recognition.",
+        link: "https://doi.org/10.3390/signals6020022"
+    }
+];
+
 
     const projectsData = [
         { title: "Hospital Management System Using Java Swing and MySQL", duration: "2020", status: "Completed", desc: "Developed a desktop application for hospital management using Java Swing and MySQL database.", funder: "Freelance Project" },
